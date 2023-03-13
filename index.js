@@ -32,7 +32,7 @@ app.put('/users/:id', (request, response) => {
     return response.json(updatedUsers)
 })
 
-app.delete('/users:id', (request, response) => {
+app.delete('/users/:id', (request, response) => {
     const { id } = request.params
     const index = users.findIndex(user => user.id === id)
 
